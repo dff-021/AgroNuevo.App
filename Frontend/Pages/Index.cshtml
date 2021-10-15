@@ -1,0 +1,104 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Zona Agro";
+}
+<style type="text/css"> 
+    #Contenedor{
+        overflow: hidden;
+        
+        padding: 10px;
+    }
+    
+    
+    #Izquierda{
+         float: right;
+        
+        padding: 0px;
+        width: auto;
+        margin:auto;
+        background: #D2D6D1;
+        justify-content: center;
+        height:750px;
+        position: absolute;
+        
+        left:75%
+        
+    }
+       
+    
+    #Derecha{
+        float: left;
+        padding: 10px;
+        width: auto;
+        margin:auto;
+       
+    }
+    
+    #texto{
+         padding: 5px;
+        
+        text-align: center;
+        justify-content: center;
+        background:#ffffff;
+        line-height: 20px;
+       height: 120px;
+       
+    }
+    
+    </style>
+
+
+
+
+<center> 
+<div id="Derecha"> 
+    
+    
+    </div>
+    
+    </center>
+    
+        
+
+    <div id="Izquierda"> 
+    <table> 
+        
+        <tr> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+       <center>  <h1>ZONA AGRO </h1></center>
+    <br>
+    
+   <div id=texto> <br> <h6> Registra aqui los datos de tu finca 
+    para pronosticar tus ganancias
+     y establecer tus costos de
+      produccion. </h6> </div>
+            
+    <br> 
+    <br><br>
+        </tr>
+    <tr> 
+         
+    
+   <center>
+       <link rel="stylesheet"href="~/css/Index.css"  type="text/css"> 
+       <div class = "btn-item">  
+           <a href="/MisPaginas/Login" class="btn-ghost round"> Iniciar sesion</a>
+           <br><br><br><br>
+           
+        <a href="/MisPaginas/Edit" class="btn-ghost secondary round"> Registrar</a>
+           
+           
+     </div>
+           
+       </center>
+   
+        </tr>
+    </table>
+    </div>

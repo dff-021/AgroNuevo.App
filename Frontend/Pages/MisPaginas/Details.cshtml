@@ -1,0 +1,19 @@
+﻿@page
+@model AgroNuevo.App.Frontend.Pages.DetailsModel
+@{
+}
+<h2>DATOS DE LA FINCA</h2>
+
+<div>
+    NombreFinca: @Model.DatosFinca.nombreFinca
+</div>
+<div>
+    Ubicacion: @Model.DatosFinca.ubicacion
+</div>
+<div>
+    LotesDesignados: @Model.DatosFinca.lotesDesignados
+</div>
+<div>
+    CantidadProductoSembrado: @Model.DatosFinca.cantidadProductoSembrado
+</div>
+<a asp-page=".List" class="btn-default">Volver a Finca</a>

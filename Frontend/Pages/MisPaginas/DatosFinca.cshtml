@@ -1,0 +1,40 @@
+﻿@page
+@model AgroNuevo.Frontend.Pages.DatosFincaModel
+@{
+}
+<h>INGRESAR DATOS DE LA FINCA</h>
+
+<table class="table">
+    @foreach (var DatosFinca in Model.DatosFinca)
+    {
+        <tr>
+            <td>@DatosFinca.nombreFinca</td>
+            <td>@DatosFinca.ubicacion</td>
+            <td>@DatosFinca.lotesDesignados</td>
+            <td>@DatosFinca.cantidadProductoSembrado</td>
+            
+            <td>
+                <a class = "btn btn-primary table-btn" asp-page="./Details" asp-route-DatosFincaId="@DatosFinca.Id">
+                    <i class="fas fa-info-circle fa-lg" ></i>
+                </a>                
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-DatosFinca="@DatosFinca.Id">
+                <i class="fas fa-address-book fa-lg" aria-hidden="true"></i>
+                </a>
+              
+            </td>
+        </tr>
+        
+    }
+
+
+
+
+
+</table>
+<a asp-page="./Edit" class="btn btn-primary">Adicionar Finca</a>
+
+<div class = "btn-item">  
+       <center>  <a href="/MisPaginas/Registro" class="btn-ghost round"> Crear Usuario</a></center>
+     </div>

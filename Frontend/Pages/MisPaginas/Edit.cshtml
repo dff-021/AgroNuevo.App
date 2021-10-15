@@ -1,0 +1,33 @@
+﻿@page
+@model AgroNuevo.App.Frontend.Pages.EditModel
+@{
+    int datosfincaId=Model.DatosFinca.Id;
+}
+<h2>Editar Datos Finca</h2>
+<form method="post">
+    <input type="hidden" asp-for="DatosFinca.Id"/>
+
+        <div class="for-group">
+        <label asp-for="DatosFinca.nombreFinca"></label>
+        <input asp-for="DatosFinca.nombreFinca" class="form-control">
+        <span class="text-danger" asp-validation-for="DatosFinca.nombreFinca"></span>        
+    </div>
+        <div class="for-group">
+        <label asp-for="DatosFinca.ubicacion"></label>
+        <input asp-for="DatosFinca.ubicacion" class="form-control">
+        <span class="text-danger" asp-validation-for="DatosFinca.ubicacion"></span>        
+    </div>
+        <div class="for-group">
+        <label asp-for="DatosFinca.lotesDesignados"></label>
+        <input asp-for="DatosFinca.lotesDesignados" class="form-control">
+        <span class="text-danger" asp-validation-for="DatosFinca.lotesDesignados"></span>        
+    </div>
+        <div class="for-group">
+        <label asp-for="DatosFinca.cantidadProductoSembrado"></label>
+        <input asp-for="DatosFinca.cantidadProductoSembrado" class="form-control">
+        <span class="text-danger" asp-validation-for="DatosFinca.cantidadProductoSembrado"></span>        
+     </div>
+     <button type="submit" class="btn btn-primary">Guardar</button>
+     <a href="/MisPaginas/DatosFinca" class="btn-ghost secondary round"> Volver</a>
+
+</form>
