@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Dominio.Entidades;
 
-namespace Persistencia.AppRepositorios
+namespace AgroNuevo.App.Persistencia.AppRepositorios
 {
     public interface IRepositorioCostoProduccion    
     {
@@ -14,9 +14,9 @@ namespace Persistencia.AppRepositorios
 
         CostoProduccion UpdateCostoProduccion(CostoProduccion costoProduccion);
 
-        void DeleteCostoProduccion(int idCostoProduccion );
+        void DeleteCostoProduccion(int idCostoProduccion);
 
-        CostoProduccion GetCostoProduccion(int  idCostoProduccion);
+        CostoProduccion GetCostoProduccion(int idCostoProduccion);
          
     }
 }

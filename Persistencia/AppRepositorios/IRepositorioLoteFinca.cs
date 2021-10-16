@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Dominio.Entidades;
 
-namespace Persistencia.AppRepositorios
+namespace AgroNuevo.App.Persistencia.AppRepositorios
 {
     public interface IRepositorioLoteFinca
     {
@@ -12,11 +12,11 @@ namespace Persistencia.AppRepositorios
 
         LoteFinca AddLoteFinca(LoteFinca loteFinca);
 
-        LoteFinca UpdateCosecha(LoteFinca loteFinca);
+        LoteFinca UpdateLoteFinca(LoteFinca loteFinca);
 
         void DeleteLoteFinca(int idLoteFinca);
 
-        LoteFinca GetLoteFinca(int  idLoteFinca);
+        LoteFinca GetLoteFinca(int idLoteFinca);
          
     }
 }
